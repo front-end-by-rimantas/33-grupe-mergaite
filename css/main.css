@@ -4,14 +4,19 @@ body {
 }
 
 header {
-    display: inline-block;
-    width: 800px;
-    margin-left: calc(50% - 400px);
+    width: 1000px;
+    float: left;
+    margin-top: 30px;
+    margin-left: calc(50% - 500px);
     background-color: yellow;
 }
 
 header > img {
     float: left;
+    width: 150px;
+    height: 60px;
+    object-fit: contain;
+    object-position: left;
 }
 
 nav {
@@ -19,17 +24,33 @@ nav {
 }
 
 nav > a {
+    float: left;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: 5px;
+    border-style: solid;
+    /* border-color: transparent; */
+    border-color: blue;
+}
+nav > a:last-of-type {
+    margin-left: 15px;
+    border-color: red;
 }
 
 main {
-    display: inline-block;
-    width: 800px;
-    margin-left: calc((100% - 800px) / 2);
+    width: 1000px;
+    float: left;
+    margin-top: 30px;
+    margin-left: calc((100% - 1000px) / 2);
     background-color: pink;
 }
 
 div {
     float: left;
+    width: 42%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 h1 {
@@ -40,4 +61,7 @@ p {
 
 main > img {
     float: right;
+    width: 50%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
